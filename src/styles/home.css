@@ -854,7 +854,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(45deg, #e8dcc6 0%, #ddd4c7 100%);
+  /* background: linear-gradient(45deg, #e8dcc6 0%, #ddd4c7 100%); */
 }
 
 .beige-gold-image {

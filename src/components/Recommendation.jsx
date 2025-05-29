@@ -102,7 +102,7 @@ const ChanelRecommendations = () => {
                   <div className="product-image-container">
                     <img src={product.image} alt={product.name} className="product-image obj_fit" />
                   </div>
-                  <div className="product-info">
+                  <div className="product-info" data-aos="fade-top" data-aos-delay="300" data-aos-duration="1000">
                     <h3 className="product-name">{product.name}</h3>
                     <p className="product-description">{product.description}</p>
                     {product.hasClickCollect && <button className="click-collect-btn">Click & Collect</button>}
