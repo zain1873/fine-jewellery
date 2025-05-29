@@ -13,17 +13,17 @@ function Home() {
     <Parent>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-6"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <div class="banner-info">
-              <h1 className="mb-4 banner-text">Fine Jewelry</h1>
-            <p>Explore our collection of Fine Jewelry and more.</p>
+              <h1 className="mb-4 banner-text left">Fine Jewelry</h1>
+            <p className="bottom">Explore our collection of Fine Jewelry and more.</p>
           </div>
 
-            <button className="see-more-btn">SEE MORE</button>
+            <button className="see-more-btn top">SEE MORE</button>
           </div>
 
           <div className="col-lg-6">
-            <div className="banner-img">
+            <div className="banner-img "  data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
               <img src={bannerImg} alt="Chanel Banner" className="obj_fit" />
             </div>
           </div>

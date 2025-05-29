@@ -17,7 +17,7 @@ const HighJewelryHero = () => {
               <div className="sparkle-effect"></div>
               <div className="glow-effect"></div>
             </div>
-          </div>
+          </div>COCO CRUSH
           
           {/* Content Section */}
           <div className="col-lg-4 col-md-5">

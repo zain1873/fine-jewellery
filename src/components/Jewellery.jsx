@@ -2,7 +2,7 @@ import React from 'react';
 import jewelleryImg from '../images/palace-img.webp'
 const ChanelJewelrySection = () => {
   return (
-    <div className="chanel-jewelry-section">
+    <div className="chanel-jewelry-section"  data-aos="fade-top" data-aos-delay="300" data-aos-duration="1000">
       <div className="container">
         {/* Header Content */}
         <div className="header-content">
@@ -25,7 +25,7 @@ const ChanelJewelrySection = () => {
         {/* Image Section */}
         <div className="container">
          <div class="">
-             <div className="jewelry-image-container">
+             <div className="jewelry-image-container" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
             <div class="jewellery-sec-img">
                 <img className='obj_fit' src={jewelleryImg} alt=""/>
             </div>

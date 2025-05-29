@@ -44,7 +44,7 @@ const SideBySection = () => {
       <div className="beige-gold-section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2">
+            <div className="col-lg-6 col-md-6 order-lg-1 order-md-1 order-2" data-aos="fade-top" data-aos-delay="300" data-aos-duration="1000">
               <div className="image-wrapper">
                 <div className="beige-gold-image">
                   <img

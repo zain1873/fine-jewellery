@@ -13,7 +13,7 @@ const ChanelRecommendations = () => {
   const products = [
     {
       id: 1,
-      name: "COCO CRUSH SINGLE EARRING",
+      name: "COCOS SINGLE EARRING",
       description: "Quilted motif, 18K white gold, diamonds",
       price: "$2,300",
       image: product1,
@@ -31,7 +31,7 @@ const ChanelRecommendations = () => {
     },
     {
       id: 3,
-      name: "COCO CRUSH SINGLE EARRING",
+      name: "COCOS SINGLE EARRING",
       description: "Quilted motif, 18K BEIGE GOLD",
       price: "$1,400",
       image: product3,
@@ -40,7 +40,7 @@ const ChanelRecommendations = () => {
     },
     {
       id: 4,
-      name: "COCO CRUSH BRACELET",
+      name: "COCOS BRACELET",
       description: "Medium version, 18K white gold",
       price: "$3,200",
       image: product4,
@@ -77,7 +77,7 @@ const ChanelRecommendations = () => {
   const goToSlide = (index) => setCurrentSlide(index);
 
   return (
-    <div className="chanel-recommendations py-5">
+    <div className="chanel-recommendations py-5 top"  data-aos="fade-bottom" data-aos-delay="300" data-aos-duration="1000">
       <div className="container">
         <h2 className="section-title mb-4 text-center">Recommended For You</h2>
 

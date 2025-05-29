@@ -1096,7 +1096,7 @@
   transition: opacity 0.3s ease;
 }
 
-/* Coco Crush - Dark overlay */
+/* COCOS - Dark overlay */
 .coco-crush .image-overlay {
   background: linear-gradient(
     135deg, 
@@ -1127,7 +1127,7 @@
   z-index: 2;
 }
 
-/* Coco Crush Content Styling */
+/* COCOS Content Styling */
 .coco-crush .collection-content {
   background: linear-gradient(
     to top, 
@@ -1182,9 +1182,12 @@
   display: inline-block;
 }
 
-/* Coco Crush Link Styling */
+/* COCOS Link Styling */
 .coco-crush .discover-link {
   color: #ffffff;
+}
+.stars-background::after {
+  content: none;
 }
 
 .coco-crush .discover-link::after {
@@ -1731,6 +1734,8 @@
 }
 
 
+/* annimation */
+
 
 
 
@@ -1780,3 +1785,4 @@
     }
 
 } 
+

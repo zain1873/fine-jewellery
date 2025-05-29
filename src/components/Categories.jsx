@@ -33,7 +33,7 @@ const JewelryCategories = () => {
   ];
 
   return (
-    <div className="jewelry-categories-section py-5">
+    <div className="jewelry-categories-section py-5"  data-aos="fade-top" data-aos-delay="300" data-aos-duration="1000">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="section-title">DISCOVER BY CATEGORY</h2>
