@@ -1,0 +1,1707 @@
+.obj_fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-img {
+    height: 500px;
+
+}
+
+/* recommendation component */
+
+/* chanel-recommendations.css */
+/* Chanel Recommendations Slider Component CSS */
+
+.chanel-recommendations {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 80px 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  gap: 30px;
+}
+
+.product-card {
+  flex: 0 0 calc(33.333% - 20px);
+  text-align: center;
+  position: relative;
+  background: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image-container {
+  position: relative;
+  margin-bottom: 30px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+}
+
+.product-image {
+  font-size: 80px;
+  opacity: 0.8;
+}
+
+.product-info {
+  padding: 0 10px;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.product-description {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.click-collect-btn {
+  background: none;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.click-collect-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.try-on-container {
+  margin-bottom: 15px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.try-on-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.try-on-btn:hover {
+  color: #666666;
+}
+
+.try-on-icon {
+  font-size: 14px;
+}
+
+.view-details {
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.view-details:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+.arrow-right {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.view-details:hover .arrow-right {
+  transform: translateX(3px);
+}
+
+.navigation-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #cccccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-arrows:hover {
+  color: #000000;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.navigation-arrows:disabled {
+  color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.navigation-arrows:disabled:hover {
+  transform: translateY(-50%);
+  color: #e9ecef;
+}
+
+.nav-prev {
+  left: -60px;
+}
+
+.nav-next {
+  right: -60px;
+}
+
+.pagination-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.pagination-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.pagination-dot:hover {
+  background-color: #999999;
+}
+
+.pagination-dot.active {
+  background-color: #000000;
+  transform: scale(1.2);
+}
+
+.see-more-btn {
+  background: none;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 12px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .product-card {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .nav-prev {
+    left: -40px;
+  }
+
+  .nav-next {
+    right: -40px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chanel-recommendations {
+    padding: 60px 0;
+  }
+
+  .product-card {
+    flex: 0 0 100%;
+  }
+
+  .slider-track {
+    gap: 20px;
+  }
+
+  .nav-prev,
+  .nav-next {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .product-image-container {
+    height: 250px;
+  }
+
+  .product-image {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-container {
+    padding: 0 15px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+
+  .product-image-container {
+    height: 200px;
+  }
+
+  .product-image {
+    font-size: 50px;
+  }
+
+  .see-more-btn {
+    padding: 10px 25px;
+    font-size: 11px;
+  }
+}   
+
+
+
+/* categories */
+/* JewelryCategories.css */
+.jewelry-categories-section {
+  background-color: #fefefe;
+  padding: 80px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.title-underline {
+  width: 60px;
+  height: 1px;
+  background-color: #d4af37;
+  margin: 0 auto 25px;
+}
+
+.see-all-link {
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #666;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.see-all-link:hover {
+  color: #d4af37;
+  border-bottom-color: #d4af37;
+  text-decoration: none;
+}
+
+.category-card {
+  text-align: center;
+  padding: 40px 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 300px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* subtle shadow */
+}
+
+.category-image {
+  max-height: 140px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.05);
+}
+
+.category-link-container {
+  margin-top: 10px;
+}
+
+.category-link {
+  font-size: 0.95rem;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.category-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 1px;
+  background-color: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.category-link:hover {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.category-link:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jewelry-categories-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .category-card {
+    padding: 30px 15px;
+  }
+
+  .category-image {
+    max-height: 100px;
+  }
+
+  .category-link {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .category-card {
+    padding: 25px 10px;
+  }
+}
+
+
+/* jewellery section */
+/* ChanelJewelrySection.css */
+
+.chanel-jewelry-section {
+  background-color: #ffffff;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+}
+
+
+/* Header Content Styling */
+.header-content {
+  text-align: center;
+  padding: 80px 40px 60px;
+  background-color: #ffffff;
+}   
+
+.collection-number {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #666666;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.discover-link-container {
+  margin-top: 45px;
+}
+
+.discover-link {
+  font-size: 0.9rem;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.discover-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.discover-link:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+.discover-link:hover::after {
+  background-color: #666666;
+}
+
+
+
+.jewelry-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-jewelry-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.8) contrast(1.2);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg, 
+    rgba(0, 0, 0, 0.3) 0%, 
+    rgba(0, 0, 0, 0.1) 50%, 
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main-title {
+    font-size: 2.4rem;
+  }
+  
+  .header-content {
+    padding: 70px 30px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 60px 20px 40px;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .main-title br {
+    display: none;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+  
+  .description br {
+    display: none;
+  }
+  
+  .image-section {
+    height: 400px;
+  }
+  
+  .collection-number {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  
+  .discover-link {
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-content {
+    padding: 50px 15px 30px;
+  }
+  
+  .main-title {
+    font-size: 1.6rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .image-section {
+    height: 300px;
+  }
+  
+  .discover-link-container {
+    margin-top: 35px;
+  }
+}
+
+/* Animation for smooth loading */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-content > * {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.collection-number {
+  animation-delay: 0.1s;
+}
+
+.main-title {
+  animation-delay: 0.2s;
+}
+
+.description {
+  animation-delay: 0.3s;
+}
+
+.discover-link-container {
+  animation-delay: 0.4s;
+}
+
+/* Luxury feel enhancements */
+.main-title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.chanel-jewelry-section {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.jewellery-sec-img {
+    height: 600px;
+    width: 100%;
+}
+
+/* side by section */
+/* BeigeGoldSection.css */
+
+.beige-gold-section {
+  background: linear-gradient(135deg, #faf8f3 0%, #f5f2eb 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  /* min-height: 50vh; */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  padding: 80px 60px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2c2c2c;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Section Description */
+.section-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+/* Discover Link */
+.discover-link-container {
+  margin-top: 50px;
+}
+
+.discover-link {
+  font-size: 0.9rem;
+  color: #2c2c2c;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.discover-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2c2c2c;
+  transition: all 0.3s ease;
+}
+
+.discover-link:hover {
+  color: #c9a96e;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.discover-link:hover::after {
+  background-color: #c9a96e;
+  height: 2px;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(45deg, #e8dcc6 0%, #ddd4c7 100%);
+}
+
+.beige-gold-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(1.1) contrast(1.05) saturate(1.1);
+  transition: transform 0.8s ease;
+}
+
+.beige-gold-image:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    padding: 60px 40px;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .beige-gold-section {
+    min-height: auto;
+  }
+  
+  .row {
+    min-height: auto;
+  }
+  
+  .image-wrapper {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .content-wrapper {
+    padding: 50px 30px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 40px 25px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .section-description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  .image-wrapper {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .discover-link {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .section-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .image-wrapper {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .discover-link-container {
+    margin-top: 40px;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.content-wrapper {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.image-wrapper {
+  animation: fadeInRight 1s ease-out;
+}
+
+/* Luxury Enhancements */
+.section-title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.beige-gold-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(201, 169, 110, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(201, 169, 110, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content-wrapper,
+.image-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gold accent elements */
+.content-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 3px;
+  height: 60px;
+  background: linear-gradient(to bottom, #c9a96e, transparent);
+  opacity: 0.6;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.3s ease;
+}
+
+ .beige-gold-image {
+    height: 700px;
+ }
+
+
+
+ /* DualCollectionSection.css */
+
+.dual-collection-section {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.collection-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Collection Items */
+.collection-item {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.collection-item:hover {
+  transform: scale(1.02);
+}
+
+/* Image Wrapper */
+.collection-image-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.8s ease;
+}
+
+.collection-item:hover .collection-image {
+  transform: scale(1.05);
+}
+
+/* Image Overlays */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Coco Crush - Dark overlay */
+.coco-crush .image-overlay {
+  background: linear-gradient(
+    135deg, 
+    rgba(0, 0, 0, 0.4) 0%, 
+    rgba(0, 0, 0, 0.2) 50%, 
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+/* Collection N°5 - Light overlay */
+.collection-n5 .image-overlay.light {
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(240, 240, 240, 0.2) 50%, 
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+/* Content Section */
+.collection-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 60px 40px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Coco Crush Content Styling */
+.coco-crush .collection-content {
+  background: linear-gradient(
+    to top, 
+    rgba(0, 0, 0, 0.9) 0%, 
+    rgba(0, 0, 0, 0.7) 70%, 
+    transparent 100%
+  );
+  color: #ffffff;
+}
+
+/* Collection N°5 Content Styling */
+.collection-n5 .collection-content {
+  background: linear-gradient(
+    to top, 
+    rgba(255, 255, 255, 0.95) 0%, 
+    rgba(245, 245, 245, 0.8) 70%, 
+    transparent 100%
+  );
+  color: #2c2c2c;
+}
+
+/* Collection Titles */
+.collection-title {
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+.collection-item:hover .collection-title {
+  transform: translateY(-5px);
+  letter-spacing: 4px;
+}
+
+/* Discover Links */
+.discover-link-container {
+  margin-top: 25px;
+}
+
+.discover-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Coco Crush Link Styling */
+.coco-crush .discover-link {
+  color: #ffffff;
+}
+
+.coco-crush .discover-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.coco-crush .discover-link:hover {
+  color: #d4af37;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.coco-crush .discover-link:hover::after {
+  background-color: #d4af37;
+  height: 2px;
+}
+
+/* Collection N°5 Link Styling */
+.collection-n5 .discover-link {
+  color: #2c2c2c;
+}
+
+.collection-n5 .discover-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2c2c2c;
+  transition: all 0.3s ease;
+}
+
+.collection-n5 .discover-link:hover {
+  color: #666666;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.collection-n5 .discover-link:hover::after {
+  background-color: #666666;
+  height: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dual-collection-section {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .collection-container {
+    flex-direction: column;
+  }
+  
+  .collection-item {
+    min-height: 50vh;
+  }
+  
+  .collection-content {
+    padding: 40px 30px;
+  }
+  
+  .collection-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .discover-link {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .collection-item {
+    min-height: 45vh;
+  }
+  
+  .collection-content {
+    padding: 30px 20px;
+  }
+  
+  .collection-title {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  
+  .discover-link {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .discover-link-container {
+    margin-top: 20px;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.collection-content {
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.coco-crush .collection-content {
+  animation-delay: 0.2s;
+}
+
+.collection-n5 .collection-content {
+  animation-delay: 0.4s;
+}
+
+/* Luxury Enhancement Effects */
+.collection-title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collection-n5 .collection-title {
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Hover state for entire sections */
+.collection-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  transition: background 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.coco-crush:hover::before {
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.collection-n5:hover::before {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+
+
+/* HighJewelryHero.css */
+
+.high-jewelry-hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #000000 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 2;
+  padding: 0 40px;
+}
+
+.row {
+  /* min-height: 100vh; */
+  margin: 0;
+}
+
+/* Jewelry Image Section */
+.jewelry-image-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-jewelry-image {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  filter: brightness(1.2) contrast(1.3) saturate(1.1);
+  transition: transform 0.8s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-jewelry-image:hover {
+  transform: scale(1.02);
+}
+
+/* Sparkle Effect */
+.sparkle-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 30%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: sparkle 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* Glow Effect */
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 192, 203, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: glow 4s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+/* Hero Content */
+.hero-content {
+  padding: 60px 40px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.category-label {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #cccccc;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Discover Button */
+.discover-button-container {
+  margin-top: 50px;
+}
+
+.discover-button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.9rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.discover-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.discover-button:hover::before {
+  left: 100%;
+}
+
+.discover-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.discover-button:active {
+  transform: translateY(0);
+}
+
+/* Background Elements */
+.stars-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 90px 40px, #ffffff, transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(2px 2px at 160px 30px, #ffffff, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: twinkle 5s linear infinite;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 30%,
+    rgba(0, 0, 0, 0.3) 70%
+  );
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-content {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .high-jewelry-hero {
+    min-height: auto;
+  }
+  
+  .row {
+    min-height: auto;
+    flex-direction: column-reverse;
+  }
+  
+  .jewelry-image-container {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-content {
+    padding: 40px 30px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 20px;
+  }
+  
+  .jewelry-image-container {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .hero-content {
+    padding: 30px 20px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-title br {
+    display: none;
+  }
+  
+  .category-label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+  
+  .discover-button {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    padding: 12px 30px;
+  }
+  
+  .sparkle-effect,
+  .glow-effect {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+  }
+  
+  .jewelry-image-container {
+    height: 45vh;
+    min-height: 300px;
+  }
+  
+  .discover-button-container {
+    margin-top: 40px;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-content > * {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.category-label {
+  animation-delay: 0.2s;
+}
+
+.hero-title {
+  animation-delay: 0.4s;
+}
+
+.discover-button-container {
+  animation-delay: 0.6s;
+}
+
+.jewelry-image-container {
+  animation: fadeInLeft 1.2s ease-out;
+}
+
+/* Luxury Enhancement */
+.high-jewelry-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 70% 30%, rgba(255, 192, 203, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}

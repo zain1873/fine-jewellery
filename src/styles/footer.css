@@ -1,0 +1,303 @@
+/* chanel-footer.css */
+/* Chanel Footer Component CSS */
+
+.chanel-footer-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer-top {
+  background-color: #ffffff;
+  padding: 40px 0 60px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.suggested-price {
+  text-align: left;
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+
+.suggested-price p {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.suggested-price a {
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.suggested-price a:hover {
+  color: #495057;
+  text-decoration: underline;
+}
+
+.footer-main {
+  padding: 0 15px;
+}
+
+.footer-section {
+  margin-bottom: 40px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-text {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  margin-bottom: 15px;
+}
+
+.contact-link {
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  color: #495057;
+  text-decoration: underline;
+}
+
+.input-group-custom {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-control-custom {
+  width: 100%;
+  padding: 15px 50px 15px 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #495057;
+  transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: none;
+}
+
+.form-control-custom::placeholder {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.input-icon:hover {
+  color: #000000;
+}
+
+.search-icon {
+  font-size: 16px;
+}
+
+.location-icon {
+  font-size: 16px;
+  right: 45px;
+}
+
+.newsletter-form {
+  position: relative;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 15px 80px 15px 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #495057;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: none;
+}
+
+.newsletter-input::placeholder {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+.newsletter-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.newsletter-button:hover {
+  background-color: #333333;
+}
+
+.newsletter-button:focus {
+  outline: none;
+}
+
+.arrow-icon {
+  font-size: 12px;
+}
+
+/* Demo section */
+.demo-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.demo-content h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.demo-content p {
+  color: #6c757d;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .chanel-footer-container {
+    padding: 40px 0;
+  }
+
+  .footer-top {
+    padding: 30px 0 40px 0;
+  }
+
+  .suggested-price {
+    margin-bottom: 40px;
+  }
+
+  .footer-section {
+    margin-bottom: 35px;
+  }
+
+  .footer-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chanel-footer-container {
+    padding: 30px 0;
+  }
+
+  .footer-top {
+    padding: 20px 0 30px 0;
+  }
+
+  .suggested-price {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .form-control-custom,
+  .newsletter-input {
+    padding: 12px 50px 12px 12px;
+    font-size: 13px;
+  }
+
+  .newsletter-input {
+    padding-right: 70px;
+  }
+
+  .newsletter-button {
+    padding: 0 20px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control-custom,
+  .newsletter-input {
+    padding: 10px 45px 10px 10px;
+    font-size: 12px;
+  }
+
+  .newsletter-input {
+    padding-right: 65px;
+  }
+
+  .newsletter-button {
+    padding: 0 15px;
+    font-size: 10px;
+  }
+
+  .input-icon {
+    right: 12px;
+    font-size: 14px;
+  }
+
+  .location-icon {
+    right: 40px;
+  }
+}
