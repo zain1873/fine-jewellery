@@ -14,8 +14,10 @@ function Home() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <h1 className="mb-4 banner-text">Fine Jewelry</h1>
+          <div class="banner-info">
+              <h1 className="mb-4 banner-text">Fine Jewelry</h1>
             <p>Explore our collection of Fine Jewelry and more.</p>
+          </div>
 
             <button className="see-more-btn">SEE MORE</button>
           </div>

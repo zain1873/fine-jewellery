@@ -1729,3 +1729,39 @@
   pointer-events: none;
   z-index: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width:768px) {
+    .banner-info {
+        margin-top: 30px;
+    }
+    .banner-img {
+        height: 350px;
+    }
+    .collection-image {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+      .collection-image {
+        height: 400px;
+    }
+
+} 
