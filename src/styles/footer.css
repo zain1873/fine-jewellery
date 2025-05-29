@@ -4,12 +4,11 @@
 .chanel-footer-container {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: #f8f9fa;
-  padding: 20px 0;
 }
 
 .footer-top {
   background-color: #ffffff;
-  padding: 40px 0 60px 0;
+  padding: 40px 0 40px 0;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -206,7 +205,6 @@
 /* Responsive Design */
 @media (max-width: 992px) {
   .chanel-footer-container {
-    padding: 40px 0;
   }
 
   .footer-top {
@@ -233,7 +231,7 @@
 
 @media (max-width: 768px) {
   .chanel-footer-container {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
   .footer-top {
