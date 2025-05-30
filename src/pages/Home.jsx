@@ -12,7 +12,8 @@ function Home() {
   return (
     <Parent>
       <div className="container">
-        <div className="row align-items-center">
+        <div class="banner-info">
+          <div className="row align-items-center">
           <div className="col-lg-6"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           <div class="banner-info">
               <h1 className="mb-4 banner-text left">Fine Jewelry</h1>
@@ -28,7 +29,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
 
       <ChanelRecommendations />
       <JewelryCategories />

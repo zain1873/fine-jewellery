@@ -152,6 +152,8 @@
 
 // export default Navbar;
 
+
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "../styles/navbar.css";
@@ -168,10 +170,10 @@ const Navbar = () => {
     { label: 'Earrings', path: '/earrings' },
     { label: 'Necklaces', path: '/necklaces' },
     { label: 'Brooches', path: '/brooches' },
-    { label: 'All Fine Jewelry', path: '/all-jewelry' },
-    { label: 'CHANEL TRY ON', path: '/tryon' },
-    { label: 'Engagement Rings', path: '/engagement' },
-    { label: 'Wedding Rings', path: '/wedding' },
+    // { label: 'All Fine Jewelry', path: '/all-fine-jewelry' },
+    { label: 'CHANEL TRY ON', path: '/try-on' },
+    { label: 'Engagement Rings', path: '/engagement-rings' },
+    { label: 'Wedding Rings', path: '/wedding-rings' },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);

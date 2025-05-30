@@ -1,8 +1,11 @@
 import React from 'react'
+import Parent from '../components/Parent'
 
 function Rings() {
   return (
-    <div>Rings</div>
+    <Parent>
+      Rings
+    </Parent>
   )
 }
 
