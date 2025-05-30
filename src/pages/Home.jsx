@@ -15,12 +15,13 @@ function Home() {
         <div class="banner-info">
           <div className="row align-items-center">
           <div className="col-lg-6"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-          <div class="banner-info">
+          <div class="banner-info p-lg-3 py-2">
               <h1 className="mb-4 banner-text left">Fine Jewelry</h1>
             <p className="bottom">Explore our collection of Fine Jewelry and more.</p>
+              <button className="see-more-btn top">SEE MORE</button>
+
           </div>
 
-            <button className="see-more-btn top">SEE MORE</button>
           </div>
 
           <div className="col-lg-6">
@@ -30,7 +31,7 @@ function Home() {
           </div>
         </div>
         </div>
-        </div>
+      </div>
 
       <ChanelRecommendations />
       <JewelryCategories />

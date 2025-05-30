@@ -77,7 +77,7 @@ const ChanelRecommendations = () => {
   const goToSlide = (index) => setCurrentSlide(index);
 
   return (
-    <div className="chanel-recommendations py-5 top"  data-aos="fade-bottom" data-aos-delay="300" data-aos-duration="1000">
+    <div className="chanel-recommendations py-lg-5 py-3 top"  data-aos="fade-bottom" data-aos-delay="300" data-aos-duration="1000">
       <div className="container">
         <h2 className="section-title mb-4 text-center">Recommended For You</h2>
 

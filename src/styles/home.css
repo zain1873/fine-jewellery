@@ -8,6 +8,10 @@
 
 }
 
+.container {
+    max-width: 1444px !important;
+}
+
 /* recommendation component */
 
 /* chanel-recommendations.css */
@@ -911,6 +915,7 @@
     text-align: center;
   }
   
+  
   .section-title {
     font-size: 1.8rem;
     letter-spacing: 1.5px;
@@ -1754,9 +1759,7 @@
 
 /* responsive */
 @media only screen and (max-width:768px) {
-    .banner-info {
-        margin-top: 30px;
-    }
+
     .banner-img {
         height: 350px;
     }
