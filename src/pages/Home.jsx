@@ -7,6 +7,8 @@ import ChanelJewelrySection from "../components/Jewellery";
 import SideBySection from "../components/SideBySection";
 import DualCollectionSection from "../components/DualCollection";
 import GewelleryHero from "../components/GewelleryHero";
+import Appointment from "../components/Appointment";
+
 
 function Home() {
   return (
@@ -39,6 +41,7 @@ function Home() {
       <SideBySection />
       <DualCollectionSection />
       <GewelleryHero />
+      <Appointment/>
     </Parent>
   );
 }

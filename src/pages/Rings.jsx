@@ -1,6 +1,9 @@
 import React from 'react'
 import Parent from '../components/Parent'
 import bannerImg from "../images/wedding-rings.webp";
+import RingsCards from '../components/RingsCards';
+import Appointment from '../components/Appointment';
+import RingsDualWedding  from '../components/RIngsDualWedding';
 
 
 function Rings() {
@@ -25,6 +28,14 @@ function Rings() {
         </div>
         </div>
       </div>
+
+      <RingsCards/>
+      <RingsDualWedding/>
+      <Appointment/>
+
+      
+
+    
     </Parent>
   )
 }

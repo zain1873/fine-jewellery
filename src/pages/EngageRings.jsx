@@ -1,6 +1,9 @@
 import React from 'react'
 import Parent from "../components/Parent"
 import bannerImg from "../images/Engagement-rings-banner.webp";
+import EngageRingsCards from '../components/EngageRingsCards';
+import Appointment from '../components/Appointment';
+import RingsDualWedding from '../components/RIngsDualWedding';
 
 
 function EngageRings() {
@@ -25,6 +28,11 @@ function EngageRings() {
         </div>
         </div>
     </div>
+
+    <EngageRingsCards/>
+    <RingsDualWedding/>
+
+    <Appointment/>
    </Parent>
   )
 }

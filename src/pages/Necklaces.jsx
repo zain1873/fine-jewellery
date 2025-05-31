@@ -1,6 +1,8 @@
 import React from 'react'
 import Parent from "../components/Parent"
 import bannerImg from "../images/necklaces-new.png";
+import NecklacesCards from '../components/NecklacesCards';
+import Appointment from '../components/Appointment';
 
 
 function Necklaces() {
@@ -25,6 +27,9 @@ function Necklaces() {
         </div>
         </div>
       </div>
+
+      <NecklacesCards/>
+      <Appointment/>
    </Parent>
   )
 }

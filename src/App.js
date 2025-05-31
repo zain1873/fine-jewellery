@@ -10,6 +10,7 @@ import AllFine from './pages/AllFine';
 import TryOn from './pages/TryOn';
 import EngageRings from './pages/EngageRings';
 import WeddingRings from './pages/WeddingRings';
+import BookAppointment from './pages/BookAppointment';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/try-on" element={<TryOn />} />
           <Route path="/engagement-rings" element={<EngageRings/>} />
           <Route path="/wedding-rings" element={<WeddingRings/>} />
+          <Route path="/booking-an-appointment" element={<BookAppointment/>} />
         </Routes>
       </Router>
     </div>
